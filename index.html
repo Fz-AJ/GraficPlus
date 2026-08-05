@@ -218,6 +218,55 @@
         </form>
     </aside>
 
-    <script src="script.js"></script>
+    <script>
+        // ===== PANEL LATERAL DE COTIZACIÓN =====
+        const WHATSAPP_NUMERO = '50498283026';
+
+        const panel = document.getElementById('panelCotizacion');
+        const overlay = document.getElementById('panelOverlay');
+        const form = document.getElementById('panelForm');
+        const nombreProducto = document.getElementById('panelProducto');
+        const precioProducto = document.getElementById('panelPrecio');
+
+        function abrirPanel(boton) {
+            nombreProducto.textContent = boton.dataset.producto;
+            precioProducto.textContent = boton.dataset.precio;
+            overlay.hidden = false;
+            panel.classList.add('abierto');
+            document.body.classList.add('sin-scroll');
+        }
+
+        function cerrarPanel() {
+            panel.classList.remove('abierto');
+            overlay.hidden = true;
+            document.body.classList.remove('sin-scroll');
+        }
+
+        document.querySelectorAll('.btn-producto').forEach(function (boton) {
+            boton.addEventListener('click', function () {
+                abrirPanel(boton);
+            });
+        });
+
+        document.getElementById('panelCerrar').addEventListener('click', cerrarPanel);
+        overlay.addEventListener('click', cerrarPanel);
+
+        form.addEventListener('submit', function (evento) {
+            evento.preventDefault();
+            const datos = new FormData(form);
+            const mensaje =
+                'Hola Grafic Plus, quiero cotizar:\n' +
+                'Producto: ' + nombreProducto.textContent + '\n' +
+                'Precio de referencia: ' + precioProducto.textContent + '\n' +
+                'Cantidad: ' + datos.get('cantidad') + '\n' +
+                'Nombre: ' + datos.get('nombre') + '\n' +
+                'Contacto: ' + datos.get('contacto') + '\n' +
+                'Detalles: ' + (datos.get('detalles') || 'Sin detalles');
+
+            window.open('https://wa.me/' + WHATSAPP_NUMERO + '?text=' + encodeURIComponent(mensaje), '_blank');
+            form.reset();
+            cerrarPanel();
+        });
+    </script>
 </body>
 </html>

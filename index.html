@@ -80,7 +80,7 @@
                     <h4>Camisa Polo Estampada</h4>
                     <p>Diseño geométrico en azul y amarillo</p>
                     <span class="precio">L 450</span>
-                    <button class="btn-producto">Cotizar</button>
+                    <button class="btn-producto" data-producto="Camisa Polo Estampada" data-precio="L 450">Cotizar</button>
                 </div>
             </div>
 
@@ -96,7 +96,7 @@
                     <h4>Camisa Deportiva</h4>
                     <p>Estampado de logo en magenta y negro</p>
                     <span class="precio">L 380</span>
-                    <button class="btn-producto">Cotizar</button>
+                    <button class="btn-producto" data-producto="Camisa Deportiva" data-precio="L 380">Cotizar</button>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
                     <h4>Taza Cerámica 11oz</h4>
                     <p>Diseño floral en fucsia y azul</p>
                     <span class="precio">L 280</span>
-                    <button class="btn-producto">Cotizar</button>
+                    <button class="btn-producto" data-producto="Taza Cerámica 11oz" data-precio="L 280">Cotizar</button>
                 </div>
             </div>
 
@@ -128,7 +128,7 @@
                     <h4>Taza Mágica</h4>
                     <p>Cambia de color con el calor, estampado personalizado</p>
                     <span class="precio">L 350</span>
-                    <button class="btn-producto">Cotizar</button>
+                    <button class="btn-producto" data-producto="Taza Mágica" data-precio="L 350">Cotizar</button>
                 </div>
             </div>
         </div>
@@ -186,5 +186,38 @@
         </div>
     </footer>
 
+    <!-- ====== PANEL LATERAL DE COTIZACIÓN ====== -->
+    <div class="panel-overlay" id="panelOverlay" hidden></div>
+
+    <aside class="panel-cotizacion" id="panelCotizacion" aria-labelledby="panelTitulo" aria-hidden="true">
+        <div class="panel-encabezado">
+            <h3 id="panelTitulo">Solicitar cotización</h3>
+            <button class="panel-cerrar" id="panelCerrar" aria-label="Cerrar panel">&times;</button>
+        </div>
+
+        <div class="panel-producto">
+            <span class="panel-producto-nombre" id="panelProducto">—</span>
+            <span class="panel-producto-precio" id="panelPrecio"></span>
+        </div>
+
+        <form class="panel-form" id="panelForm">
+            <label for="cotNombre">Tu nombre</label>
+            <input type="text" id="cotNombre" name="nombre" placeholder="Nombre completo" required>
+
+            <label for="cotContacto">Teléfono o correo</label>
+            <input type="text" id="cotContacto" name="contacto" placeholder="+504 9999-9999" required>
+
+            <label for="cotCantidad">Cantidad</label>
+            <input type="number" id="cotCantidad" name="cantidad" value="1" min="1" required>
+
+            <label for="cotDetalles">Detalles del diseño</label>
+            <textarea id="cotDetalles" name="detalles" rows="4" placeholder="Colores, tallas, logo, fecha de entrega..."></textarea>
+
+            <button type="submit" class="btn-panel-enviar">Enviar por WhatsApp</button>
+            <p class="panel-nota">Se abrirá WhatsApp con tu solicitud lista para enviar.</p>
+        </form>
+    </aside>
+
+    <script src="script.js"></script>
 </body>
 </html>

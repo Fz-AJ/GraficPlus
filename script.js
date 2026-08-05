@@ -1,5 +1,5 @@
 // ===== PANEL LATERAL DE COTIZACIÓN =====
-const WHATSAPP_NUMERO = '50499999999';
+const WHATSAPP_NUMERO = '50498283026';
 
 const panel = document.getElementById('panelCotizacion');
 const overlay = document.getElementById('panelOverlay');

@@ -117,10 +117,7 @@ ul {
 .hero-logo {
     max-width: 280px;
     margin-bottom: 20px;
-    background: var(--blanco);
-    padding: 15px 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
     display: inline-block;
 }
 

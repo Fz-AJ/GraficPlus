@@ -301,44 +301,41 @@
         const nombreProducto = document.getElementById('panelProducto');
         const precioProducto = document.getElementById('panelPrecio');
 
-        function abrirPanel(boton) {
-            nombreProducto.textContent = boton.dataset.producto;
-            precioProducto.textContent = boton.dataset.precio;
-            overlay.hidden = false;
-            panel.classList.add('abierto');
-            document.body.classList.add('sin-scroll');
-        }
+        // Alterna la visibilidad del panel y el scroll del cuerpo
+        const togglePanel = (abrir = false, boton = null) => {
+            if (abrir && boton) {
+                nombreProducto.textContent = boton.dataset.producto;
+                precioProducto.textContent = boton.dataset.precio;
+            }
+            overlay.hidden = !abrir;
+            panel.classList.toggle('abierto', abrir);
+            document.body.classList.toggle('sin-scroll', abrir);
+        };
 
-        function cerrarPanel() {
-            panel.classList.remove('abierto');
-            overlay.hidden = true;
-            document.body.classList.remove('sin-scroll');
-        }
-
-        document.querySelectorAll('.btn-producto').forEach(function (boton) {
-            boton.addEventListener('click', function () {
-                abrirPanel(boton);
-            });
+        // Eventos para abrir el panel desde los botones de cotizar
+        document.querySelectorAll('.btn-producto').forEach(boton => {
+            boton.addEventListener('click', () => togglePanel(true, boton));
         });
 
-        document.getElementById('panelCerrar').addEventListener('click', cerrarPanel);
-        overlay.addEventListener('click', cerrarPanel);
+        // Eventos para cerrar el panel
+        document.getElementById('panelCerrar').addEventListener('click', () => togglePanel(false));
+        overlay.addEventListener('click', () => togglePanel(false));
 
-        form.addEventListener('submit', function (evento) {
+        // Enviar cotización por WhatsApp usando Template Literals
+        form.addEventListener('submit', (evento) => {
             evento.preventDefault();
             const datos = new FormData(form);
-            const mensaje =
-                'Hola Grafic Plus, quiero cotizar:\n' +
-                'Producto: ' + nombreProducto.textContent + '\n' +
-                'Precio de referencia: ' + precioProducto.textContent + '\n' +
-                'Cantidad: ' + datos.get('cantidad') + '\n' +
-                'Nombre: ' + datos.get('nombre') + '\n' +
-                'Contacto: ' + datos.get('contacto') + '\n' +
-                'Detalles: ' + (datos.get('detalles') || 'Sin detalles');
+            const mensaje = `Hola Grafic Plus, quiero cotizar:
+Producto: ${nombreProducto.textContent}
+Precio de referencia: ${precioProducto.textContent}
+Cantidad: ${datos.get('cantidad')}
+Nombre: ${datos.get('nombre')}
+Contacto: ${datos.get('contacto')}
+Detalles: ${datos.get('detalles') || 'Sin detalles'}`;
 
-            window.open('https://wa.me/' + WHATSAPP_NUMERO + '?text=' + encodeURIComponent(mensaje), '_blank');
+            window.open(`https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`, '_blank');
             form.reset();
-            cerrarPanel();
+            togglePanel(false);
         });
     </script>
 </body>

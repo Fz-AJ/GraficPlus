@@ -764,7 +764,6 @@ body.sin-scroll {
     color: var(--amarillo);
 }
 
-/* Con sidebar visible, el contenido se recorre a la derecha */
 @media (min-width: 769px) {
     body {
         padding-left: 70px;
@@ -775,7 +774,6 @@ body.sin-scroll {
     }
 }
 
-/* En móvil se oculta la sidebar y vuelve el menú del header */
 @media (max-width: 768px) {
     .sidebar {
         display: none;

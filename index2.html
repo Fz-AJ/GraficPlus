@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grafic Plus - Nuestros Productos</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos2.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagenes/Logos/logoG.png">
 </head>
@@ -14,9 +14,6 @@
     <aside class="sidebar">
         <ul class="sidebar__list">
 
-            <li class="sidebar__element sidebar__element--logo">
-                <img src="imagenes/Logos/logoG.png" alt="Logo Grafic Plus" class="sidebar__icon--logo">
-            </li>
 
             <li class="sidebar__element">
                 <a href="index.html#inicio">
@@ -105,75 +102,99 @@
         </div>
     </header>
 
-    <!-- ====== PRODUCTOS DESTACADOS ====== -->
-    <section class="productos" id="productos">
-        <h2 class="titulo-seccion">Productos Destacados</h2>
-        <div class="galeria-productos">
-            <!-- Camisa 1 -->
-            <div class="tarjeta-producto">
-                <div class="producto-imagen">
-                    <img src="imagenes/Productos/camisa1.jpg" alt="Camisa estampada" onerror="this.style.display='none'">
-                    <div class="placeholder-img" style="display: flex; align-items: center; justify-content: center; background: #e0e0e0; height: 200px; border-radius: 12px 12px 0 0; color: #555; font-size: 14px;">
-                        📸 camisa1.jpg
-                    </div>
-                </div>
-                <div class="producto-info">
-                    <h4>Camisa Polo Estampada</h4>
-                    <p>Diseño geométrico en azul y amarillo</p>
-                    <span class="precio">L 450</span>
-                    <button class="btn-producto" data-producto="Camisa Polo Estampada" data-precio="L 450">Cotizar</button>
-                </div>
+
+        <!-- ====== CARRUSEL ====== -->
+    <section class="carrusel-seccion">
+        <div class="carrusel-container">
+            <h2 class="titulo-seccion">Nuestros Productos</h2>
+
+            <div class="slider-box">
+                <ul>
+                    <li>
+                        <img src="imagenes/Productos/Polo1A.jpg" alt="Camisa Polo Estampada">
+                        <div class="slider-texto">
+                            <h3>Camisas Personalizadas</h3>
+                            <p>Diseños únicos con estampados de alta calidad para toda ocasión</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagenes/Productos/Deportiva.jpg" alt="Camisa Deportiva">
+                        <div class="slider-texto">
+                            <h3>Estilo Deportivo</h3>
+                            <p>Camisas con diseños modernos, duraderos y llenos de actitud</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagenes/Productos/Taza11oz.webp" alt="Taza Cerámica">
+                        <div class="slider-texto">
+                            <h3>Tazas Personalizadas</h3>
+                            <p>Perfectas para regalos, empresas o detalles promocionales únicos</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagenes/Contacto.jpg" alt="Diseño Creativo">
+                        <div class="slider-texto">
+                            <h3>Diseño Creativo</h3>
+                            <p>Transformamos tus ideas en productos profesionales y únicos</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-            <!-- Camisa 2 -->
-            <div class="tarjeta-producto">
-                <div class="producto-imagen">
-                    <img src="imagenes/Productos/camisa2.jpg" alt="Camisa estampada" onerror="this.style.display='none'">
-                    <div class="placeholder-img" style="display: flex; align-items: center; justify-content: center; background: #e0e0e0; height: 200px; border-radius: 12px 12px 0 0; color: #555; font-size: 14px;">
-                        📸 camisa2.jpg
-                    </div>
-                </div>
-                <div class="producto-info">
-                    <h4>Camisa Deportiva</h4>
-                    <p>Estampado de logo en magenta y negro</p>
-                    <span class="precio">L 380</span>
-                    <button class="btn-producto" data-producto="Camisa Deportiva" data-precio="L 380">Cotizar</button>
-                </div>
-            </div>
-
-            <!-- Taza 1 -->
-            <div class="tarjeta-producto">
-                <div class="producto-imagen">
-                    <img src="imagenes/Productos/taza1.jpg" alt="Taza estampada" onerror="this.style.display='none'">
-                    <div class="placeholder-img" style="display: flex; align-items: center; justify-content: center; background: #e0e0e0; height: 200px; border-radius: 12px 12px 0 0; color: #555; font-size: 14px;">
-                        📸 taza1.jpg
-                    </div>
-                </div>
-                <div class="producto-info">
-                    <h4>Taza Cerámica 11oz</h4>
-                    <p>Diseño floral en fucsia y azul</p>
-                    <span class="precio">L 280</span>
-                    <button class="btn-producto" data-producto="Taza Cerámica 11oz" data-precio="L 280">Cotizar</button>
-                </div>
-            </div>
-
-            <!-- Taza 2 -->
-            <div class="tarjeta-producto">
-                <div class="producto-imagen">
-                    <img src="imagenes/Productos/taza2.jpg" alt="Taza estampada" onerror="this.style.display='none'">
-                    <div class="placeholder-img" style="display: flex; align-items: center; justify-content: center; background: #e0e0e0; height: 200px; border-radius: 12px 12px 0 0; color: #555; font-size: 14px;">
-                        📸 taza2.jpg
-                    </div>
-                </div>
-                <div class="producto-info">
-                    <h4>Taza Mágica</h4>
-                    <p>Cambia de color con el calor, estampado personalizado</p>
-                    <span class="precio">L 350</span>
-                    <button class="btn-producto" data-producto="Taza Mágica" data-precio="L 350">Cotizar</button>
-                </div>
+            <!-- Puntitos indicadores -->
+            <div class="slider-dots">
+                <span class="activo"></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </section>
+
+   <!-- ====== PRODUCTOS DESTACADOS ====== -->
+<section class="productos" id="productos">
+    <h2 class="titulo-seccion">Productos Destacados</h2>
+    <div class="galeria-productos">
+        <!-- Camisa 1 -->
+        <div class="tarjeta-producto">
+            <div class="producto-imagen">
+                <img src="imagenes/Productos/Polo1A.jpg" alt="Camisa estampada">
+            </div>
+            <div class="producto-info">
+                <h4>Camisa Polo Estampada</h4>
+                <p>Diseño geométrico en azul y amarillo</p>
+                <span class="precio">L 450</span>
+                <button class="btn-producto" data-producto="Camisa Polo Estampada" data-precio="L 450">Cotizar</button>
+            </div>
+        </div>
+
+        <!-- Camisa 2 -->
+        <div class="tarjeta-producto">
+            <div class="producto-imagen">
+                <img src="imagenes/Productos/Deportiva.jpg" alt="Camisa estampada">
+            </div>
+            <div class="producto-info">
+                <h4>Camisa Deportiva</h4>
+                <p>Estampado de logo en magenta y negro</p>
+                <span class="precio">L 380</span>
+                <button class="btn-producto" data-producto="Camisa Deportiva" data-precio="L 380">Cotizar</button>
+            </div>
+        </div>
+
+        <!-- Taza 1 -->
+        <div class="tarjeta-producto">
+            <div class="producto-imagen">
+                <img src="imagenes/Productos/Taza11oz.webp" alt="Taza estampada">
+            </div>
+            <div class="producto-info">
+                <h4>Taza Cerámica 11oz</h4>
+                <p>Diseño floral en fucsia y azul</p>
+                <span class="precio">L 280</span>
+                <button class="btn-producto" data-producto="Taza Cerámica 11oz" data-precio="L 280">Cotizar</button>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ====== FOOTER ====== -->
     <footer class="footer">
@@ -182,7 +203,7 @@
                 <img src="imagenes/Logos/logoG.png" alt="Grafic Plus" width="50">
                 <span>Grafic Plus</span>
             </div>
-            <p>&copy; 2025 Grafic Plus - Calidad que se lleva puesta</p>
+            <p>&copy; 2026 Grafic Plus - Calidad que se lleva puesta</p>
             <p class="footer-desarrollo">Desarrollado con ❤️ para Informática</p>
         </div>
     </footer>
@@ -220,54 +241,35 @@
     </aside>
 
     <script>
-        // ===== PANEL LATERAL DE COTIZACIÓN =====
-        const WHATSAPP_NUMERO = '50498283026';
+const WHATSAPP_NUMERO = '50498283026';
+const panel = document.getElementById('panelCotizacion');
+const overlay = document.getElementById('panelOverlay');
 
-        const panel = document.getElementById('panelCotizacion');
-        const overlay = document.getElementById('panelOverlay');
-        const form = document.getElementById('panelForm');
-        const nombreProducto = document.getElementById('panelProducto');
-        const precioProducto = document.getElementById('panelPrecio');
+//abrir panel
+document.querySelectorAll('.btn-producto').forEach(b => b.addEventListener('click', function() {
+    document.getElementById('panelProducto').textContent = this.dataset.producto;
+    document.getElementById('panelPrecio').textContent = this.dataset.precio;
+    panel.classList.add('abierto');
+    overlay.hidden = false;
+}));
 
-        function abrirPanel(boton) {
-            nombreProducto.textContent = boton.dataset.producto;
-            precioProducto.textContent = boton.dataset.precio;
-            overlay.hidden = false;
-            panel.classList.add('abierto');
-            document.body.classList.add('sin-scroll');
-        }
+//cerrar panel
+function cerrar() {
+    panel.classList.remove('abierto');
+    overlay.hidden = true;
+}
+document.getElementById('panelCerrar').addEventListener('click', cerrar);
+overlay.addEventListener('click', cerrar);
 
-        function cerrarPanel() {
-            panel.classList.remove('abierto');
-            overlay.hidden = true;
-            document.body.classList.remove('sin-scroll');
-        }
-
-        document.querySelectorAll('.btn-producto').forEach(function (boton) {
-            boton.addEventListener('click', function () {
-                abrirPanel(boton);
-            });
-        });
-
-        document.getElementById('panelCerrar').addEventListener('click', cerrarPanel);
-        overlay.addEventListener('click', cerrarPanel);
-
-        form.addEventListener('submit', function (evento) {
-            evento.preventDefault();
-            const datos = new FormData(form);
-            const mensaje =
-                'Hola Grafic Plus, quiero cotizar:\n' +
-                'Producto: ' + nombreProducto.textContent + '\n' +
-                'Precio de referencia: ' + precioProducto.textContent + '\n' +
-                'Cantidad: ' + datos.get('cantidad') + '\n' +
-                'Nombre: ' + datos.get('nombre') + '\n' +
-                'Contacto: ' + datos.get('contacto') + '\n' +
-                'Detalles: ' + (datos.get('detalles') || 'Sin detalles');
-
-            window.open('https://wa.me/' + WHATSAPP_NUMERO + '?text=' + encodeURIComponent(mensaje), '_blank');
-            form.reset();
-            cerrarPanel();
-        });
-    </script>
+//enviar formulario
+document.getElementById('panelForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const f = new FormData(this);
+    const msg = `Hola Grafic Plus, quiero cotizar:\nProducto: ${document.getElementById('panelProducto').textContent}\nCantidad: ${f.get('cantidad')}\nNombre: ${f.get('nombre')}\nContacto: ${f.get('contacto')}\nDetalles: ${f.get('detalles') || 'Sin detalles'}`;
+    window.open(`https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(msg)}`, '_blank');
+    this.reset();
+    cerrar();
+});
+</script>
 </body>
 </html>

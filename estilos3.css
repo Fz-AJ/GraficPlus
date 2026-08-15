@@ -78,6 +78,30 @@ ul {
     font-style: italic;
 }
 
+.header-contacto-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--blanco);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-contacto-link:hover {
+    background-color: var(--amarillo);
+    color: var(--negro);
+    transform: scale(1.05);
+}
+
+.header-contacto-link svg {
+    flex-shrink: 0;
+}
+
 /* ===== HERO NOSOTROS ===== */
 .hero-nosotros {
     background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%);

@@ -8,7 +8,6 @@
 body {
     font-family: 'Nunito', 'Plus Jakarta Sans', sans-serif;
     background-color: #ffffff;
-    color: #1a1a1a;
     line-height: 1.6;
     padding-left: 70px;
 }
@@ -79,22 +78,77 @@ ul {
     font-style: italic;
 }
 
-.navegacion ul {
+/* ===== HERO NOSOTROS ===== */
+.hero-nosotros {
+    background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-principal) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--blanco);
+    min-height: 500px;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.navegacion a {
+.hero-nosotros-contenido {
+    max-width: 850px;
+}
+
+.hero-logo {
+    max-width: 280px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
+    display: inline-block;
+}
+
+.hero-nosotros h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
     color: var(--blanco);
+}
+
+.hero-descripcion {
+    font-size: 20px;
+    color: #d4e6f1;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.hero-descripcion strong {
+    color: var(--amarillo);
+}
+
+.hero-equipo {
+    font-size: 18px;
+    color: #d4e6f1;
+    margin-bottom: 25px;
     font-weight: 600;
-    font-size: 16px;
-    padding: 8px 14px;
+}
+
+.valores-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.valores-hero span {
+    background: rgba(255,255,255,0.15);
+    color: var(--blanco);
+    padding: 10px 25px;
     border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.1);
     transition: all 0.3s ease;
 }
 
-.navegacion a:hover {
-    background-color: var(--amarillo);
+.valores-hero span:hover {
+    background: var(--amarillo);
     color: var(--negro);
     transform: scale(1.05);
 }
@@ -120,229 +174,50 @@ ul {
     border-radius: 4px;
 }
 
-/* ===== CARRUSEL ===== */
-.carrusel-seccion {
-    padding: 70px 20px 40px 20px;
-    background: var(--blanco);
-}
-
-.carrusel-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.slider-box {
-    width: 100%;
-    height: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    background: #f0f2f5;
-}
-
-.slider-box ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    height: 100%;
-    animation: slide 16s infinite ease-in-out;
-}
-
-.slider-box li {
-    width: 25%;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    flex-shrink: 0;
-}
-
-.slider-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.slider-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-    width: 85%;
-    padding: 25px;
-    border-radius: 15px;
-    background-color: rgba(54, 53, 53, 0.85);
-}
-
-.slider-texto h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.slider-texto p {
-    font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-@keyframes slide {
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
-}
-
-/* ===== PRODUCTOS ===== */
-.productos {
+/* ===== VALORES DETALLADOS ===== */
+.valores-detallados {
     padding: 70px 20px;
-    background: var(--blanco);
+    background: #f8f9fa;
 }
 
-.galeria-productos {
+.valores-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
-.tarjeta-producto {
+.valor-item {
     background: var(--blanco);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
     transition: all 0.3s ease;
     border: 1px solid #eef2f7;
 }
 
-.tarjeta-producto:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-    border-color: var(--magenta);
+.valor-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(26, 82, 118, 0.15);
+    border-color: var(--azul-principal);
 }
 
-.producto-imagen {
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    padding: 10px;
+.valor-icono {
+    font-size: 50px;
+    margin-bottom: 15px;
 }
 
-.producto-imagen img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.producto-info {
-    padding: 18px 20px 22px;
-}
-
-.producto-info h4 {
-    font-size: 18px;
+.valor-item h3 {
+    font-size: 22px;
     color: var(--azul-principal);
-    margin-bottom: 6px;
-}
-
-.producto-info p {
-    color: #666;
-    font-size: 14px;
     margin-bottom: 12px;
 }
 
-.precio {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--magenta);
-    margin-bottom: 8px;
-}
-
-/* ===== BOTÓN COTIZAR ===== */
-.cotizar-label {
-    display: inline-block;
-    background: var(--azul-principal);
-    color: var(--blanco);
-    border: none;
-    padding: 10px 28px;
-    border-radius: 30px;
-    font-weight: 600;
+.valor-item p {
+    color: #555;
     font-size: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 100%;
-    text-align: center;
-}
-
-.cotizar-label:hover {
-    background: var(--magenta);
-    transform: scale(1.02);
-}
-
-.cotizar-checkbox {
-    display: none;
-}
-
-.cotizar-detalles {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease;
-    opacity: 0;
-    padding: 0 10px;
-    margin-top: 6px;
-    background: #f4f6f8;
-    border-radius: 12px;
-    border-left: 4px solid var(--magenta);
-}
-
-.cotizar-checkbox:checked + .cotizar-detalles {
-    max-height: 300px;
-    padding: 15px 15px;
-    opacity: 1;
-}
-
-.cotizar-detalles p {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #333;
-}
-
-.cotizar-detalles strong {
-    color: var(--azul-principal);
-}
-
-.cotizar-wa {
-    display: inline-block;
-    margin-top: 8px;
-    background: #25D366;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    transition: background 0.3s ease;
-}
-
-.cotizar-wa:hover {
-    background: #128C7E;
-    color: white;
 }
 
 /* ===== SIDEBAR ===== */
@@ -466,9 +341,6 @@ ul {
     body {
         padding-left: 70px;
     }
-    .navegacion {
-        display: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -482,14 +354,14 @@ ul {
         flex-direction: column;
         gap: 12px;
     }
-    .navegacion ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
+    .hero-nosotros h2 {
+        font-size: 32px;
     }
-    .navegacion a {
-        font-size: 14px;
-        padding: 6px 12px;
+    .hero-descripcion {
+        font-size: 17px;
+    }
+    .hero-equipo {
+        font-size: 16px;
     }
     .titulo-seccion {
         font-size: 28px;
@@ -500,31 +372,24 @@ ul {
     .lema {
         font-size: 12px;
     }
-    .slider-box {
-        height: 350px;
-    }
-    .slider-texto h3 {
-        font-size: 28px;
-    }
-    .slider-texto p {
-        font-size: 16px;
-    }
-    .galeria-productos {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .valores-hero span {
+        font-size: 14px;
+        padding: 8px 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .slider-box {
-        height: 280px;
+    .hero-nosotros {
+        padding: 50px 15px;
+        min-height: 350px;
     }
-    .slider-texto h3 {
-        font-size: 22px;
+    .hero-nosotros h2 {
+        font-size: 26px;
     }
-    .slider-texto p {
-        font-size: 14px;
+    .hero-descripcion {
+        font-size: 15px;
     }
-    .galeria-productos {
+    .valores-grid {
         grid-template-columns: 1fr;
     }
 }

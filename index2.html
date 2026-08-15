@@ -10,11 +10,20 @@
 </head>
 <body>
 
-    SIDEBAR 
+    <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
         <ul class="sidebar__list">
+            <!-- ===== LOGO EN LA PARTE SUPERIOR ===== -->
+            <li class="sidebar__element sidebar__element--logo">
+                <a href="index.html" style="pointer-events: none; cursor: default;">
+                    <img src="imagenes/Logos/logoG.png" alt="Grafic Plus" class="sidebar__icon--logo">
+                    <div class="sidebar__hide">
+                        <p class="sidebar__text" style="font-weight: 700; font-size: 18px; color: var(--amarillo);">Grafic Plus</p>
+                    </div>
+                </a>
+            </li>
 
-
+            <!-- ===== INICIO ===== -->
             <li class="sidebar__element">
                 <a href="index.html#inicio">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -26,6 +35,7 @@
                 </a>
             </li>
 
+            <!-- ===== SERVICIOS ===== -->
             <li class="sidebar__element">
                 <a href="index.html#servicios">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -38,8 +48,9 @@
                 </a>
             </li>
 
+            <!-- ===== PRODUCTOS ===== -->
             <li class="sidebar__element">
-                <a href="#productos">
+                <a href="index2.html#productos">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 2H5c-.55 0-1 .45-1 1v4H2v2h2v2H2v2h2v2H2v2h2v4c0 .55.45 1 1 1h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h8v16H6zm13 16h-3V4h3z"></path>
                     </svg>
@@ -49,8 +60,9 @@
                 </a>
             </li>
 
+            <!-- ===== NOSOTROS (Index 3) ===== -->
             <li class="sidebar__element">
-                <a href="index.html#nosotros">
+                <a href="index3.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M2 20h20v2H2zM18 8h-4c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h4c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1m-1 8h-2v-6h2zM10 2H6c-.55 0-1 .45-1 1v14c0 .55.45 1 1 1h4c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1M9 16H7V4h2z"></path>
                     </svg>
@@ -60,8 +72,9 @@
                 </a>
             </li>
 
+            <!-- ===== CONTACTO (Index 4) ===== -->
             <li class="sidebar__element">
-                <a href="index.html#contacto">
+                <a href="index4.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20 8h-3V4c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h1v2c0 .38.21.72.55.89.14.07.29.11.45.11.21 0 .42-.07.6-.2L9 15v2c0 1.1.9 2 2 2h3.67l3.73 2.8c.18.13.39.2.6.2.15 0 .31-.04.45-.11A1 1 0 0 0 20 21v-2c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2M6 12H4V4h11v8h-5c-.12 0-.24.03-.35.07-.04.02-.07.04-.11.06-.05.02-.09.04-.14.07L7 14v-1c0-.55-.45-1-1-1m14 5h-1c-.55 0-1 .45-1 1v1l-2.4-1.8a1 1 0 0 0-.6-.2h-4v-3h4c1.1 0 2-.9 2-2v-2h3z"></path>
                     </svg>
@@ -70,17 +83,10 @@
                     </div>
                 </a>
             </li>
-
-            <div class="sidebar__profile">
-                <img src="imagenes/Logos/logoG.png" alt="Grafic Plus" class="sidebar__avatar">
-                <div class="sidebar__user-info sidebar__hide">
-                    <p class="sidebar__user-name">Grafic Plus</p>
-                </div>
-            </div>
         </ul>
     </aside>
 
-    //HEADER
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="header-contenido">
             <div class="logo">
@@ -90,113 +96,258 @@
                     <span class="lema">Calidad que se lleva puesta</span>
                 </div>
             </div>
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="index.html#inicio">Inicio</a></li>
-                    <li><a href="index.html#servicios">Servicios</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="index.html#nosotros">Nosotros</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-
-    //CARRRUSEL
+    <!-- ===== CARRUSEL ===== -->
     <section class="carrusel-seccion">
         <div class="carrusel-container">
             <h2 class="titulo-seccion">Nuestros Productos</h2>
-
             <div class="slider-box">
                 <ul>
                     <li>
-                        <img src="imagenes/Productos/Polo1A.jpg" alt="Camisa Polo Estampada">
+                        <img src="Imagenes/Productos/diseño3.jpg" alt="Camisa Polo Estampada">
                         <div class="slider-texto">
                             <h3>Camisas Personalizadas</h3>
                             <p>Diseños únicos con estampados de alta calidad para toda ocasión</p>
                         </div>
                     </li>
                     <li>
-                        <img src="imagenes/Productos/Deportiva.jpg" alt="Camisa Deportiva">
-                        <div class="slider-texto">
-                            <h3>Estilo Deportivo</h3>
-                            <p>Camisas con diseños modernos, duraderos y llenos de actitud</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="imagenes/Productos/Taza11oz.webp" alt="Taza Cerámica">
+                        <img src="Imagenes/Productos/tazad3.webp" alt="Taza Cerámica">
                         <div class="slider-texto">
                             <h3>Tazas Personalizadas</h3>
                             <p>Perfectas para regalos, empresas o detalles promocionales únicos</p>
                         </div>
                     </li>
                     <li>
-                        <img src="imagenes/Contacto.jpg" alt="Diseño Creativo">
+                        <img src="Imagenes/Productos/diseño2.jpg" alt="Diseño Creativo">
                         <div class="slider-texto">
                             <h3>Diseño Creativo</h3>
                             <p>Transformamos tus ideas en productos profesionales y únicos</p>
                         </div>
                     </li>
+                    <li>
+                        <img src="Imagenes/Productos/diseño7.jpeg" alt="Diseño 7">
+                        <div class="slider-texto">
+                            <h3>Diseños para Papá</h3>
+                            <p>Camisas con diseños especiales para regalar</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Imagenes/Productos/bote.jpeg" alt="Bote personalizado">
+                        <div class="slider-texto">
+                            <h3>Botes Personalizados</h3>
+                            <p>Ideal para promociones, regalos y eventos especiales</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Imagenes/Productos/tazad1.webp" alt="Taza diseño 1">
+                        <div class="slider-texto">
+                            <h3>Tazas Creativas</h3>
+                            <p>Diseños originales para darle color a tu día</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="Imagenes/Productos/total.jpeg" alt="Colección completa">
+                        <div class="slider-texto">
+                            <h3>Colección Total</h3>
+                            <p>Variedad de estilos para todos los gustos</p>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-
-            <!-- Puntitos indicadores -->
-            <div class="slider-dots">
-                <span class="activo"></span>
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </div>
     </section>
 
-    //PRODUCTOS DESTACADOS
-<section class="productos" id="productos">
-    <h2 class="titulo-seccion">Productos Destacados</h2>
-    <div class="galeria-productos">
-        <!-- Camisa 1 -->
-        <div class="tarjeta-producto">
-            <div class="producto-imagen">
-                <img src="imagenes/Productos/Polo1A.jpg" alt="Camisa estampada">
+    <!-- ===== PRODUCTOS DESTACADOS ===== -->
+    <section class="productos" id="productos">
+        <h2 class="titulo-seccion">Productos Destacados</h2>
+        <div class="galeria-productos">
+            
+            <!-- Producto 1 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/Polo1A.jpg" alt="Camisa estampada">
+                </div>
+                <div class="producto-info">
+                    <h4>Camisa Polo Estampada</h4>
+                    <p>Diseño geométrico en azul y amarillo</p>
+                    <span class="precio">L 450</span>
+                    <label for="cot1" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot1" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Camisa Polo Estampada</p>
+                        <p><strong>Precio:</strong> L 450</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Polo%20Estampada" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
             </div>
-            <div class="producto-info">
-                <h4>Camisa Polo Estampada</h4>
-                <p>Diseño geométrico en azul y amarillo</p>
-                <span class="precio">L 450</span>
-                <button class="btn-producto" data-producto="Camisa Polo Estampada" data-precio="L 450">Cotizar</button>
-            </div>
-        </div>
 
-        <!-- Camisa 2 -->
-        <div class="tarjeta-producto">
-            <div class="producto-imagen">
-                <img src="imagenes/Productos/Deportiva.jpg" alt="Camisa estampada">
+            <!-- Producto 2 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/Deportiva.jpg" alt="Camisa deportiva">
+                </div>
+                <div class="producto-info">
+                    <h4>Camisa Deportiva</h4>
+                    <p>Estampado de logo en magenta y negro</p>
+                    <span class="precio">L 380</span>
+                    <label for="cot2" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot2" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Camisa Deportiva</p>
+                        <p><strong>Precio:</strong> L 380</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Deportiva" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
             </div>
-            <div class="producto-info">
-                <h4>Camisa Deportiva</h4>
-                <p>Estampado de logo en magenta y negro</p>
-                <span class="precio">L 380</span>
-                <button class="btn-producto" data-producto="Camisa Deportiva" data-precio="L 380">Cotizar</button>
-            </div>
-        </div>
 
-        <!-- Taza 1 -->
-        <div class="tarjeta-producto">
-            <div class="producto-imagen">
-                <img src="imagenes/Productos/Taza11oz.webp" alt="Taza estampada">
+            <!-- Producto 3 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/Taza11oz.webp" alt="Taza cerámica">
+                </div>
+                <div class="producto-info">
+                    <h4>Taza Cerámica 11oz</h4>
+                    <p>Diseño floral en fucsia y azul</p>
+                    <span class="precio">L 280</span>
+                    <label for="cot3" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot3" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Taza Cerámica 11oz</p>
+                        <p><strong>Precio:</strong> L 280</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Taza%20Cer%C3%A1mica%2011oz" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
             </div>
-            <div class="producto-info">
-                <h4>Taza Cerámica 11oz</h4>
-                <p>Diseño floral en fucsia y azul</p>
-                <span class="precio">L 280</span>
-                <button class="btn-producto" data-producto="Taza Cerámica 11oz" data-precio="L 280">Cotizar</button>
-            </div>
-        </div>
-    </div>
-</section>
 
-    //FOOTER
+            <!-- Producto 4 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/diseño4.webp" alt="Camisa diseño 4">
+                </div>
+                <div class="producto-info">
+                    <h4>Camisa Urban Style</h4>
+                    <p>Estampado moderno con mensaje urbano</p>
+                    <span class="precio">L 420</span>
+                    <label for="cot4" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot4" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Camisa Urban Style</p>
+                        <p><strong>Precio:</strong> L 420</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Urban%20Style" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/diseño5.webp" alt="Camisa diseño 5">
+                </div>
+                <div class="producto-info">
+                    <h4>Camisa Music Lover</h4>
+                    <p>Diseño con frase musical y estilo vintage</p>
+                    <span class="precio">L 400</span>
+                    <label for="cot5" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot5" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Camisa Music Lover</p>
+                        <p><strong>Precio:</strong> L 400</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Music%20Lover" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/diseño6.webp" alt="Camisa diseño 6">
+                </div>
+                <div class="producto-info">
+                    <h4>Camisa Rebel Spirit</h4>
+                    <p>Diseño de samurai inspirado en Japón</p>
+                    <span class="precio">L 430</span>
+                    <label for="cot6" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot6" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Camisa Rebel Spirit</p>
+                        <p><strong>Precio:</strong> L 430</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Rebel%20Spirit" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/tazad2.webp" alt="Taza diseño 2">
+                </div>
+                <div class="producto-info">
+                    <h4>Taza Brooklyn</h4>
+                    <p>Diseño urbano con estilo neoyorquino</p>
+                    <span class="precio">L 290</span>
+                    <label for="cot7" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot7" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Taza Brooklyn</p>
+                        <p><strong>Precio:</strong> L 290</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Taza%20Brooklyn" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/tazad3.webp" alt="Taza diseño 3">
+                </div>
+                <div class="producto-info">
+                    <h4>Taza Color Block</h4>
+                    <p>Diseños de imágenes familiares</p>
+                    <span class="precio">L 300</span>
+                    <label for="cot8" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot8" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Taza Color Block</p>
+                        <p><strong>Precio:</strong> L 300</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Taza%20Color%20Block" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="tarjeta-producto">
+                <div class="producto-imagen">
+                    <img src="imagenes/Productos/bote.jpeg" alt="Bote personalizado">
+                </div>
+                <div class="producto-info">
+                    <h4>Bote Personalizado</h4>
+                    <p>Bote metálico con diseño exclusivo para eventos</p>
+                    <span class="precio">L 350</span>
+                    <label for="cot9" class="cotizar-label">Cotizar</label>
+                    <input type="checkbox" id="cot9" class="cotizar-checkbox">
+                    <div class="cotizar-detalles">
+                        <p><strong>Producto:</strong> Bote Personalizado</p>
+                        <p><strong>Precio:</strong> L 350</p>
+                        <p><strong>Contáctanos:</strong></p>
+                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20el%20Bote%20Personalizado" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-contenido">
             <div class="footer-logo">
@@ -204,72 +355,9 @@
                 <span>Grafic Plus</span>
             </div>
             <p>&copy; 2026 Grafic Plus - Calidad que se lleva puesta</p>
-            <p class="footer-desarrollo">Desarrollado con ❤️ para Informática</p>
+            <p class="footer-desarrollo">Desarrollado con mucho desvelo</p>
         </div>
     </footer>
 
-    //PANEL LATERAL DE COTIZACIÓN
-    <div class="panel-overlay" id="panelOverlay" hidden></div>
-
-    <aside class="panel-cotizacion" id="panelCotizacion" aria-labelledby="panelTitulo" aria-hidden="true">
-        <div class="panel-encabezado">
-            <h3 id="panelTitulo">Solicitar cotización</h3>
-            <button class="panel-cerrar" id="panelCerrar" aria-label="Cerrar panel">&times;</button>
-        </div>
-
-        <div class="panel-producto">
-            <span class="panel-producto-nombre" id="panelProducto">—</span>
-            <span class="panel-producto-precio" id="panelPrecio"></span>
-        </div>
-
-        <form class="panel-form" id="panelForm">
-            <label for="cotNombre">Tu nombre</label>
-            <input type="text" id="cotNombre" name="nombre" placeholder="Nombre completo" required>
-
-            <label for="cotContacto">Teléfono o correo</label>
-            <input type="text" id="cotContacto" name="contacto" placeholder="+504 9828-3026" required>
-
-            <label for="cotCantidad">Cantidad</label>
-            <input type="number" id="cotCantidad" name="cantidad" value="1" min="1" required>
-
-            <label for="cotDetalles">Detalles del diseño</label>
-            <textarea id="cotDetalles" name="detalles" rows="4" placeholder="Colores, tallas, logo, fecha de entrega..."></textarea>
-
-            <button type="submit" class="btn-panel-enviar">Enviar por WhatsApp</button>
-            <p class="panel-nota">Se abrirá WhatsApp con tu solicitud lista para enviar.</p>
-        </form>
-    </aside>
-
-    <script>
-const WHATSAPP_NUMERO = '50498283026';
-const panel = document.getElementById('panelCotizacion');
-const overlay = document.getElementById('panelOverlay');
-
-//abrir panel
-document.querySelectorAll('.btn-producto').forEach(b => b.addEventListener('click', function() {
-    document.getElementById('panelProducto').textContent = this.dataset.producto;
-    document.getElementById('panelPrecio').textContent = this.dataset.precio;
-    panel.classList.add('abierto');
-    overlay.hidden = false;
-}));
-
-//cerrar panel
-function cerrar() {
-    panel.classList.remove('abierto');
-    overlay.hidden = true;
-}
-document.getElementById('panelCerrar').addEventListener('click', cerrar);
-overlay.addEventListener('click', cerrar);
-
-//enviar formulario
-document.getElementById('panelForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const f = new FormData(this);
-    const msg = `Hola Grafic Plus, quiero cotizar:\nProducto: ${document.getElementById('panelProducto').textContent}\nCantidad: ${f.get('cantidad')}\nNombre: ${f.get('nombre')}\nContacto: ${f.get('contacto')}\nDetalles: ${f.get('detalles') || 'Sin detalles'}`;
-    window.open(`https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(msg)}`, '_blank');
-    this.reset();
-    cerrar();
-});
-</script>
 </body>
 </html>

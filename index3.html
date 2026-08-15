@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafic Plus - Inicio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Grafic Plus - Nosotros</title>
+    <link rel="stylesheet" href="estilos3.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagenes/Logos/logoG.png">
 </head>
@@ -15,17 +15,17 @@
         <ul class="sidebar__list">
             <!-- ===== LOGO EN LA PARTE SUPERIOR ===== -->
             <li class="sidebar__element sidebar__element--logo">
-                <a href="#inicio" style="pointer-events: none; cursor: default;">
+                <a href="index.html" style="pointer-events: none; cursor: default;">
                     <img src="imagenes/Logos/logoG.png" alt="Grafic Plus" class="sidebar__icon--logo">
                     <div class="sidebar__hide">
                         <p class="sidebar__text" style="font-weight: 700; font-size: 18px; color: var(--amarillo);">Grafic Plus</p>
                     </div>
                 </a>
             </li>
-            
+
             <!-- ===== INICIO ===== -->
             <li class="sidebar__element">
-                <a href="#inicio">
+                <a href="index.html#inicio">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12.71 2.29a.996.996 0 0 0-1.41 0l-8.01 8A1 1 0 0 0 3 11v9c0 1.1.9 2 2 2h4c.55 0 1-.45 1-1v-6h4v6c0 .55.45 1 1 1h4c1.1 0 2-.9 2-2v-9c0-.27-.11-.52-.29-.71zM16 20v-5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v5H5v-8.59l7-7 7 7V20z"></path>
                     </svg>
@@ -37,7 +37,7 @@
 
             <!-- ===== SERVICIOS ===== -->
             <li class="sidebar__element">
-                <a href="#servicios">
+                <a href="index.html#servicios">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 3h-2c0-.55-.45-1-1-1H8c-.55 0-1 .45-1 1H5c-1.1 0-2 .9-2 2v15c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 17H5V5h2v2h10V5h2z"></path>
                         <path d="M11 14.09 8.71 11.8 7.3 13.21l3 3c.2.2.45.29.71.29s.51-.1.71-.29l5-5-1.41-1.41-4.29 4.29Z"></path>
@@ -50,7 +50,7 @@
 
             <!-- ===== PRODUCTOS ===== -->
             <li class="sidebar__element">
-                <a href="index2.html">
+                <a href="index2.html#productos">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 2H5c-.55 0-1 .45-1 1v4H2v2h2v2H2v2h2v2H2v2h2v4c0 .55.45 1 1 1h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h8v16H6zm13 16h-3V4h3z"></path>
                     </svg>
@@ -60,7 +60,7 @@
                 </a>
             </li>
 
-            <!-- ===== NOSOTROS (Index 3) ===== -->
+            <!-- ===== NOSOTROS ===== -->
             <li class="sidebar__element">
                 <a href="index3.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@
             </li>
         </ul>
     </aside>
-    
+
     <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="header-contenido">
@@ -99,34 +99,47 @@
         </div>
     </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="inicio">
-        <div class="hero-contenido">
+    <!-- ===== HERO CON NOSOTROS ===== -->
+    <section class="hero-nosotros" id="nosotros">
+        <div class="hero-nosotros-contenido">
             <img src="imagenes/Logos/rott.png" alt="Grafic Plus" class="hero-logo">
-            <h2>Calidad que se lleva puesta</h2>
-            <p>Transformamos tus ideas en diseños únicos para camisas y tazas</p>
-            <a href="#servicios" class="btn-hero">Ver servicios</a>
+            <h2>Sobre Grafic Plus</h2>
+            <p class="hero-descripcion">
+                <strong>Grafic Plus</strong> nace con la misión de ofrecer estampados de calidad que reflejen la personalidad de cada cliente. Con mucha experiencia, combinamos tecnología de punta con creatividad para dar vida a tus ideas.
+            </p>
+            <p class="hero-equipo">Hecho por: Astrid, Dayana, Mariela, Anthony, Kevin y Kenseth.</p>
+            <div class="valores-hero">
+                <span>🎯 Calidad</span>
+                <span>💡 Creatividad</span>
+                <span>🤝 Confianza</span>
+                <span>🚀 Innovación</span>
+            </div>
         </div>
     </section>
 
-    <!-- ===== SERVICIOS ===== -->
-    <section class="servicios" id="servicios">
-        <h2 class="titulo-seccion">Nuestros Servicios</h2>
-        <div class="tarjetas-servicios">
-            <div class="tarjeta-servicio">
-                <div class="icono-servicio">👕</div>
-                <h3>Estampado en Camisas</h3>
-                <p>Diseños duraderos con tintas de alta calidad. Ideal para empresas, eventos y promociones.</p>
+    <!-- ===== SECCIÓN DE VALORES DETALLADA ===== -->
+    <section class="valores-detallados">
+        <h2 class="titulo-seccion">Nuestros Valores</h2>
+        <div class="valores-grid">
+            <div class="valor-item">
+                <div class="valor-icono">🎯</div>
+                <h3>Calidad</h3>
+                <p>Utilizamos materiales y técnicas de estampado de primera calidad para garantizar resultados duraderos.</p>
             </div>
-            <div class="tarjeta-servicio">
-                <div class="icono-servicio">☕</div>
-                <h3>Estampado en Tazas</h3>
-                <p>Personaliza tus tazas con diseños resistentes al lavado. Perfectas para regalos y negocios.</p>
+            <div class="valor-item">
+                <div class="valor-icono">💡</div>
+                <h3>Creatividad</h3>
+                <p>Transformamos tus ideas en diseños únicos que destacan y reflejan tu estilo personal.</p>
             </div>
-            <div class="tarjeta-servicio">
-                <div class="icono-servicio">🎨</div>
-                <h3>Diseño Personalizado</h3>
-                <p>Creamos el diseño perfecto para tu proyecto. Desde logos hasta ilustraciones originales.</p>
+            <div class="valor-item">
+                <div class="valor-icono">🤝</div>
+                <h3>Confianza</h3>
+                <p>Construimos relaciones duraderas con nuestros clientes basadas en transparencia y cumplimiento.</p>
+            </div>
+            <div class="valor-item">
+                <div class="valor-icono">🚀</div>
+                <h3>Innovación</h3>
+                <p>Nos mantenemos actualizados con las últimas tendencias y tecnologías en estampado.</p>
             </div>
         </div>
     </section>

@@ -79,6 +79,12 @@ ul {
     font-style: italic;
 }
 
+.header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .header-contacto-link {
     display: flex;
     align-items: center;
@@ -285,21 +291,27 @@ ul {
     width: 85%;
     padding: 25px;
     border-radius: 15px;
-    background-color: rgba(54, 53, 53, 0.85);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .slider-texto h3 {
     font-family: 'Playfair Display', serif;
     font-size: 35px;
     margin-bottom: 15px;
-    font-weight: 700;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+    color: var(--blanco);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .slider-texto p {
     font-size: 18px;
-    font-weight: 400;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
     max-width: 700px;
     margin: 0 auto;
 }
@@ -496,6 +508,12 @@ ul {
     height: 45px;
     border-radius: 50%;
     flex-shrink: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.sidebar:not(:hover) .sidebar__icon--logo {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .sidebar__element a {

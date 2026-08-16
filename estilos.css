@@ -503,3 +503,25 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== CONTADOR DEL CARRITO ===== */
+.carrito-contador {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--magenta);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.header-contacto-link {
+    position: relative;
+}

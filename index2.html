@@ -13,7 +13,6 @@
     <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
         <ul class="sidebar__list">
-            <!-- ===== LOGO EN LA PARTE SUPERIOR ===== -->
             <li class="sidebar__element sidebar__element--logo">
                 <a href="index.html" style="pointer-events: none; cursor: default;">
                     <img src="imagenes/Logos/logoG.png" alt="Grafic Plus" class="sidebar__icon--logo">
@@ -22,8 +21,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== INICIO ===== -->
             <li class="sidebar__element">
                 <a href="index.html#inicio">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -34,8 +31,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== SERVICIOS ===== -->
             <li class="sidebar__element">
                 <a href="index.html#servicios">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -47,8 +42,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== PRODUCTOS ===== -->
             <li class="sidebar__element">
                 <a href="index2.html#productos">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -59,8 +52,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== NOSOTROS (Index 3) ===== -->
             <li class="sidebar__element">
                 <a href="index3.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -71,7 +62,6 @@
                     </div>
                 </a>
             </li>
-
         </ul>
     </aside>
 
@@ -85,15 +75,23 @@
                     <span class="lema">Calidad que se lleva puesta</span>
                 </div>
             </div>
-            <a href="index4.html" class="header-contacto-link" title="Contacto">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                </svg>
-                <span>Contacto</span>
-            </a>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <a href="index5.html" class="header-contacto-link" title="Carrito de compras">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.07 13.9l.01-.02.47-.85L15 13h3.47l3.01-6H7.78l-.76-2H3v2h2.22l2.67 6.84L5.25 17.48C4.59 18.76 5.53 20 7 20h12v-2H7l1.2-2.1z"/>
+                    </svg>
+                    <span>Carrito</span>
+                    <span class="carrito-contador" id="carrito-contador-header">0</span>
+                </a>
+                <a href="index4.html" class="header-contacto-link" title="Contacto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <span>Contacto</span>
+                </a>
+            </div>
         </div>
     </header>
-
 
     <!-- ===== CARRUSEL ===== -->
     <section class="carrusel-seccion">
@@ -169,14 +167,7 @@
                     <h4>Camisa Polo Estampada</h4>
                     <p>Diseño geométrico en azul y amarillo</p>
                     <span class="precio">L 450</span>
-                    <label for="cot1" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot1" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Camisa Polo Estampada</p>
-                        <p><strong>Precio:</strong> L 450</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Polo%20Estampada" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto1', 'Camisa Polo Estampada', 450, 'imagenes/Productos/Polo1A.jpg')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -189,14 +180,7 @@
                     <h4>Camisa Deportiva</h4>
                     <p>Estampado de logo en magenta y negro</p>
                     <span class="precio">L 380</span>
-                    <label for="cot2" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot2" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Camisa Deportiva</p>
-                        <p><strong>Precio:</strong> L 380</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Deportiva" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto2', 'Camisa Deportiva', 380, 'imagenes/Productos/Deportiva.jpg')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -209,14 +193,7 @@
                     <h4>Taza Cerámica 11oz</h4>
                     <p>Diseño floral en fucsia y azul</p>
                     <span class="precio">L 280</span>
-                    <label for="cot3" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot3" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Taza Cerámica 11oz</p>
-                        <p><strong>Precio:</strong> L 280</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Taza%20Cer%C3%A1mica%2011oz" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto3', 'Taza Cerámica 11oz', 280, 'imagenes/Productos/Taza11oz.webp')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -229,14 +206,7 @@
                     <h4>Camisa Urban Style</h4>
                     <p>Estampado moderno con mensaje urbano</p>
                     <span class="precio">L 420</span>
-                    <label for="cot4" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot4" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Camisa Urban Style</p>
-                        <p><strong>Precio:</strong> L 420</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Urban%20Style" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto4', 'Camisa Urban Style', 420, 'imagenes/Productos/diseño4.webp')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -249,14 +219,7 @@
                     <h4>Camisa Music Lover</h4>
                     <p>Diseño con frase musical y estilo vintage</p>
                     <span class="precio">L 400</span>
-                    <label for="cot5" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot5" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Camisa Music Lover</p>
-                        <p><strong>Precio:</strong> L 400</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Music%20Lover" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto5', 'Camisa Music Lover', 400, 'imagenes/Productos/diseño5.webp')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -269,14 +232,7 @@
                     <h4>Camisa Rebel Spirit</h4>
                     <p>Diseño de samurai inspirado en Japón</p>
                     <span class="precio">L 430</span>
-                    <label for="cot6" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot6" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Camisa Rebel Spirit</p>
-                        <p><strong>Precio:</strong> L 430</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Camisa%20Rebel%20Spirit" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto6', 'Camisa Rebel Spirit', 430, 'imagenes/Productos/diseño6.webp')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -289,14 +245,7 @@
                     <h4>Taza Brooklyn</h4>
                     <p>Diseño urbano con estilo neoyorquino</p>
                     <span class="precio">L 290</span>
-                    <label for="cot7" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot7" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Taza Brooklyn</p>
-                        <p><strong>Precio:</strong> L 290</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Taza%20Brooklyn" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto7', 'Taza Brooklyn', 290, 'imagenes/Productos/tazad2.webp')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -309,14 +258,7 @@
                     <h4>Taza Color Block</h4>
                     <p>Diseños de imágenes familiares</p>
                     <span class="precio">L 300</span>
-                    <label for="cot8" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot8" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Taza Color Block</p>
-                        <p><strong>Precio:</strong> L 300</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20la%20Taza%20Color%20Block" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto8', 'Taza Color Block', 300, 'imagenes/Productos/tazad3.webp')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -329,14 +271,7 @@
                     <h4>Bote Personalizado</h4>
                     <p>Bote metálico con diseño exclusivo para eventos</p>
                     <span class="precio">L 350</span>
-                    <label for="cot9" class="cotizar-label">Cotizar</label>
-                    <input type="checkbox" id="cot9" class="cotizar-checkbox">
-                    <div class="cotizar-detalles">
-                        <p><strong>Producto:</strong> Bote Personalizado</p>
-                        <p><strong>Precio:</strong> L 350</p>
-                        <p><strong>Contáctanos:</strong></p>
-                        <a href="https://wa.me/50498283026?text=Hola%20Grafic%20Plus%2C%20quiero%20cotizar%20el%20Bote%20Personalizado" target="_blank" class="cotizar-wa">Enviar por WhatsApp</a>
-                    </div>
+                    <button onclick="agregarAlCarrito('producto9', 'Bote Personalizado', 350, 'imagenes/Productos/bote.jpeg')" class="btn-comprar-producto">🛒 Comprar</button>
                 </div>
             </div>
 
@@ -354,6 +289,56 @@
             <p class="footer-desarrollo">Desarrollado con mucho desvelo</p>
         </div>
     </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="carrito.js"></script>
+    <style>
+        /* Estilos para el botón Comprar en productos */
+        .btn-comprar-producto {
+            display: inline-block;
+            background: var(--azul-principal);
+            color: var(--blanco);
+            border: none;
+            padding: 10px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn-comprar-producto:hover {
+            background: var(--magenta);
+            transform: scale(1.02);
+        }
+        
+        /* Estilos para el contador del carrito en header */
+        .carrito-contador {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--magenta);
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+        }
+        
+        .header-contacto-link {
+            position: relative;
+        }
+    </style>
+
+
+    <script src="carrito.js"></script>
 
 </body>
 </html>

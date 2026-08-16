@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafic Plus - Contacto</title>
-    <link rel="stylesheet" href="estilos4.css">
+    <title>Grafic Plus - Carrito de Compras</title>
+    <link rel="stylesheet" href="estilos5.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="imagenes/Logos/logoG.png">
 </head>
@@ -13,7 +13,6 @@
     <!-- ===== SIDEBAR ===== -->
     <aside class="sidebar">
         <ul class="sidebar__list">
-            <!-- ===== LOGO EN LA PARTE SUPERIOR ===== -->
             <li class="sidebar__element sidebar__element--logo">
                 <a href="index.html" style="pointer-events: none; cursor: default;">
                     <img src="imagenes/Logos/logoG.png" alt="Grafic Plus" class="sidebar__icon--logo">
@@ -22,8 +21,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== INICIO ===== -->
             <li class="sidebar__element">
                 <a href="index.html#inicio">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -34,8 +31,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== SERVICIOS ===== -->
             <li class="sidebar__element">
                 <a href="index.html#servicios">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -47,8 +42,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== PRODUCTOS ===== -->
             <li class="sidebar__element">
                 <a href="index2.html#productos">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -59,8 +52,6 @@
                     </div>
                 </a>
             </li>
-
-            <!-- ===== NOSOTROS ===== -->
             <li class="sidebar__element">
                 <a href="index3.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -71,7 +62,6 @@
                     </div>
                 </a>
             </li>
-
         </ul>
     </aside>
 
@@ -85,81 +75,98 @@
                     <span class="lema">Calidad que se lleva puesta</span>
                 </div>
             </div>
-
-        <a href="index5.html" class="header-contacto-link" title="Carrito de compras">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.07 13.9l.01-.02.47-.85L15 13h3.47l3.01-6H7.78l-.76-2H3v2h2.22l2.67 6.84L5.25 17.48C4.59 18.76 5.53 20 7 20h12v-2H7l1.2-2.1z"/>
-              </svg>
-              <span>Carrito</span>
-              <span class="carrito-contador" id="carrito-contador-header">0</span>
-           </a>
-
-            <a href="index4.html" class="header-contacto-link" title="Contacto">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                </svg>
-                <span>Contacto</span>
-            </a>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <a href="index5.html" class="header-contacto-link" title="Carrito de compras">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.07 13.9l.01-.02.47-.85L15 13h3.47l3.01-6H7.78l-.76-2H3v2h2.22l2.67 6.84L5.25 17.48C4.59 18.76 5.53 20 7 20h12v-2H7l1.2-2.1z"/>
+                    </svg>
+                    <span>Carrito</span>
+                    <span class="carrito-contador" id="carrito-contador-header">0</span>
+                </a>
+                <a href="index4.html" class="header-contacto-link" title="Contacto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <span>Contacto</span>
+                </a>
+            </div>
         </div>
-
     </header>
 
-    <!-- ===== HERO CONTACTO (Toda la información aquí) ===== -->
-    <section class="hero-contacto" id="contacto">
-        <div class="hero-contacto-contenido">
-            <h2>Contáctanos</h2>
-            <p class="hero-descripcion">Estamos aquí para ayudarte. Comunícate con nosotros a través de cualquiera de los siguientes medios.</p>
-            
-            <div class="contacto-info-hero">
-                <!-- Teléfono -->
-                <div class="contacto-item-hero">
-                    <span class="contacto-icono-hero">📞</span>
-                    <div>
-                        <h3>Teléfono</h3>
-                        <p>+504 9828-3026</p>
-                    </div>
-                </div>
-                
-                <!-- Email -->
-                <div class="contacto-item-hero">
-                    <span class="contacto-icono-hero">📧</span>
-                    <div>
-                        <h3>Email</h3>
-                        <p>nose@graficplus.com</p>
-                    </div>
-                </div>
-                
-                <!-- Dirección -->
-                <div class="contacto-item-hero">
-                    <span class="contacto-icono-hero">📍</span>
-                    <div>
-                        <h3>Dirección</h3>
-                        <p>Villanueva, Honduras</p>
-                    </div>
+    <!-- ===== HERO CARRITO ===== -->
+    <section class="hero-carrito" id="carrito">
+        <div class="hero-carrito-contenido">
+            <h2>🛒 Mi Carrito</h2>
+            <p>Revisa tus productos seleccionados antes de comprar</p>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN CARRITO ===== -->
+    <section class="carrito-seccion">
+        <div class="carrito-container">
+
+            <!-- ===== CARRITO VACÍO ===== -->
+            <div class="carrito-vacio" id="carrito-vacio">
+                <div class="icono-vacio">🛒</div>
+                <h3>Tu carrito está vacío</h3>
+                <p>No has agregado ningún producto aún.</p>
+                <a href="index2.html#productos" class="btn-seguir-comprando">Ver productos</a>
+            </div>
+
+            <!-- ===== CONTENIDO DEL CARRITO ===== -->
+            <div id="carrito-contenido">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+
+            <!-- ===== TOTAL Y ACCIONES ===== -->
+            <div class="carrito-total" id="carrito-total">
+                <h3>Total:</h3>
+                <span class="total-precio" id="total-general">L 0.00</span>
+                <div class="carrito-acciones">
+                    <button onclick="vaciarCarrito()" class="btn-vaciar">🗑️ Vaciar carrito</button>
+                    <button onclick="mostrarFormularioCompra()" class="btn-comprar-carrito" id="btn-comprar-carrito">Proceder a comprar</button>
                 </div>
             </div>
 
-            <div class="hero-redes-con-imagen">
-                <!-- Redes Sociales con logos -->
-                <div class="redes-sociales-hero">
-                    <h3>Síguenos</h3>
-                    <div class="redes-sociales-links">
-                        <a href="https://www.instagram.com/graf.icplus?igsh=MTR6N2I3aXA2bnV3dQ==" target="_blank" rel="noopener" class="red-social">
-                            <img src="imagenes/Logos/IG.png" alt="Instagram" class="logo-red-social">
-                            Instagram
-                        </a>
-                        <a href="https://wa.me/50498283026" target="_blank" rel="noopener" class="red-social">
-                            <img src="imagenes/Logos/Whats.png" alt="WhatsApp" class="logo-red-social">
-                            WhatsApp
-                        </a>
+            <!-- ===== FORMULARIO DE COMPRA ===== -->
+            <div class="formulario-compra" id="formulario-compra">
+                <h3>📋 Detalles de la compra</h3>
+                
+                <div class="form-group">
+                    <label for="nombre-cliente">Nombre completo *</label>
+                    <input type="text" id="nombre-cliente" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono-cliente">Teléfono</label>
+                    <input type="tel" id="telefono-cliente" placeholder="Ingresa tu número de teléfono">
+                </div>
+
+                <div class="form-group">
+                    <label>Método de pago *</label>
+                    <div class="opciones-pago">
+                        <div class="opcion-pago">
+                            <input type="radio" name="metodo-pago" value="tarjeta" id="pago-tarjeta">
+                            <label for="pago-tarjeta">💳 Pago con tarjeta</label>
+                        </div>
+                        <div class="opcion-pago">
+                            <input type="radio" name="metodo-pago" value="tienda" id="pago-tienda">
+                            <label for="pago-tienda">🏪 Recoger en tienda</label>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Imagen Contacto.jpg a la par -->
-                <div class="contacto-imagen-hero-container">
-                    <img src="imagenes/Contacto.jpg" alt="Contacto Grafic Plus" class="contacto-imagen">
+                <div class="total-compra-final">
+                    <h4>Total a pagar</h4>
+                    <span class="total-final-precio" id="total-compra">L 0.00</span>
+                </div>
+
+                <div class="form-acciones">
+                    <button onclick="confirmarCompra()" class="btn-confirmar">✅ Confirmar compra</button>
+                    <button onclick="cerrarFormulario()" class="btn-cerrar-form">✖ Cancelar</button>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -175,7 +182,14 @@
         </div>
     </footer>
 
+    <!-- ===== SCRIPTS ===== -->
     <script src="carrito.js"></script>
+    <script>
+        // Asegurar que el contador se actualice al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            actualizarContadorCarrito();
+        });
+    </script>
 
 </body>
 </html>

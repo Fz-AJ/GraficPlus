@@ -78,6 +78,12 @@ ul {
     font-style: italic;
 }
 
+.header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .header-contacto-link {
     display: flex;
     align-items: center;
@@ -406,6 +412,12 @@ ul {
     height: 45px;
     border-radius: 50%;
     flex-shrink: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.sidebar:not(:hover) .sidebar__icon--logo {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .sidebar__element a {
